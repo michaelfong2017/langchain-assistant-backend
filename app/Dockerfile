@@ -27,14 +27,9 @@ RUN conda install -y -c conda-forge conda-libmamba-solver \
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY . .
 RUN pip install -r requirements.txt
 
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
-COPY . .
-
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
 
 EXPOSE 8000
