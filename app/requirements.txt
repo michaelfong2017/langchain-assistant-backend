@@ -1,0 +1,12 @@
+Django>=2.0
+djangorestframework
+mongoengine
+markdown
+django-filter
+django-rest-swagger
+celery
+django-environ
+drf-yasg
+django-cors-headers
+openai
+langchain
